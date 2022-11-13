@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="java.sun.com/xml/ns/persistence" xmlns:xsi="w3.org/2001/XMLSchema-instance" xsi:schemaLocation="java.sun.com/xml/ns/persistence java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+	<persistence-unit name="Lab_DAWI_Sesion1">
+		<class>com.jpa.entidad.Empleado</class>
+		<class>com.jpa.entidad.Sucursal</class>
+		<properties>
+		   	<property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+          	<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/persistencia_JPA?serverTimezone=UTC"/>
+   			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
+   			<property name="hibernate.show_sql" value="true"/>
+		</properties>
+	</persistence-unit>
+</persistence>
